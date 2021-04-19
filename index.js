@@ -100,12 +100,12 @@ client.connect(err => {
             })
     })
 
-    app.get('/orders', (req, res) => {
-        appointmentCollection.find({})
-            .toArray((err, documents) => {
-                res.send(documents);
-            })
-    })
+    // app.get('/orders', (req, res) => {
+    //     appointmentCollection.find({})
+    //         .toArray((err, documents) => {
+    //             res.send(documents);
+    //         })
+    // })
     
     app.get('/testimonials', (req, res) => {
         testimonialCollection.find({})
